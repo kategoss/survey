@@ -3,10 +3,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Calculator</title>
   </head>
   <body>
-    <h1>Calculator</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+      <h1>Calculator</h1>
+      <form id="numbers">
+        <div class="form-group">
+          <label for="number1">1st number:</label>
+          <input id="number1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="number2">2nd number:</label>
+          <input id="number2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-outline-success" id="addition">+</button>
+        <button type="submit" class="btn btn-outline-danger" id="subtraction">-</button>
+        <button type="submit" class="btn btn-outline-warning" id="multiplication">*</button>
+        <button type="submit" class="btn btn-outline-info" id="division">/</button>
+      </form>
+      <div id="output">
+      </div>
+    </div>
   </body>
 </html>
