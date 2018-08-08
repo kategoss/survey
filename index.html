@@ -1,33 +1,89 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Calculator</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Calculator</h1>
-      <form id="numbers">
-        <div class="form-group">
-          <label for="number1">1st number:</label>
-          <input id="number1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="number2">2nd number:</label>
-          <input id="number2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn btn-outline-success" id="addition">+</button>
-        <button type="submit" class="btn btn-outline-danger" id="subtraction">-</button>
-        <button type="submit" class="btn btn-outline-warning" id="multiplication">*</button>
-        <button type="submit" class="btn btn-outline-info" id="division">/</button>
-      </form>
-      <div id="output">
-      </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Survey</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Survey</h1>
+
+    <form id="numbers">
+    <p>Name</p>
+    <div class="form-group">
+      <label for="person1">Name</label>
+      <input id="person1" class="form-control" type="text">
     </div>
-  </body>
+
+    <p>Birthday</p>
+    <div class="form-group">
+      <label for="born">Date of birth:</label>
+      <input id="born" class="form-control" type="date">
+    </div>
+
+    <p>Favorite Drink</p>
+    <select class="form-control" id="beverage">
+      <option>Coffee</option>
+      <option>Tea</option>
+      <option>Kombucha</option>
+      <option>Water</option>
+    </select>
+
+    <p>Favorite Music</p>
+      <div>
+        <input type="checkbox" id="rock" name="feature"
+               value="rock" checked />
+        <label for="rock">Rock</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="classical" name="feature"
+               value="classical" />
+        <label for="classical">Classical</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="pop" name="feature"
+               value="pop" />
+        <label for="pop">Pop</label>
+      </div>
+
+    <p>Favorite Ice Cream</p>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="chocolate" checked>
+        Chocolate
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="Vanilla">
+        Vanilla
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="cookiesandcream">
+        Cookies & Cream
+      </label>
+    </div>
+
+    <p>Favorite Color</p>
+    <div class="form-group">
+      <label for="color">What is your favorite color?</label>
+      <input id="color" class="form-control" type="color" name="favcolor">
+    </div>
+
+      <button type="submit" class="btn btn-primary" id="done">Done</button>
+      <div id="congrats">
+    </form>
+
+    </div>
+  </div>
+</body>
 </html>
